@@ -16,9 +16,4 @@ JDK6开始为Instrument增加很多强大的功能，其中要指出的就是在
 <li>可以修改方法体。
 
 总结:此方式局限性大,但是非常方便,对于游戏服务器进行紧急hotfix已经足够.
-
-杀手级应用: [阿里巴巴arthas](https://arthas.aliyun.com/)
-
-更多资料:[blog](https://wonderlq.github.io/archives/a9d6e545.html),[video](https://edu.51cto.com/course/30137.html)
-
 ## 方式二：Java脚本
