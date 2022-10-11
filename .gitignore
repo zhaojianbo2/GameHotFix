@@ -5,3 +5,6 @@
 */target
 */scriptBin
 
+/JavaAgentFix/JavaAgentFixmain/target
+/JavaAgentFix/JavaGameServer/target
+/JavaAgentFix/JavaAgent/target
