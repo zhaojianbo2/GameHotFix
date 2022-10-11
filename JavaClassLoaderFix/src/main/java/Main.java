@@ -19,7 +19,7 @@ public class Main {
 	    while (true) {
 		manager.actionA();
 		manager.actionB();
-		//测试,每执行5次就重载,在这期间的修改都会在重载后生效
+		// 测试,每执行5次就重载,在这期间的修改都会在重载后生效
 		if (++count % 5 == 0) {
 		    ScriptManager.getInstance().reloadScript();
 		}
