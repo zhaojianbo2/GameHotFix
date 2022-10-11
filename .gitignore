@@ -3,3 +3,5 @@
 *.project
 *.project
 */target
+/target/
+/JavaClassLoaderFix/scriptBin

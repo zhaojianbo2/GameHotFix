@@ -15,7 +15,7 @@ import com.sun.tools.attach.VirtualMachineDescriptor;
  * 
  * @author WinkeyZhao
  *
- *         开始执行hotFix 
+ *         开始执行hotFix
  *         注意事项:maven中对tools.jar的引用,windows和linux的tools.jar不能共用,注意不同系统依赖不同的tools.jar
  */
 public class FixMain {
@@ -89,8 +89,11 @@ public class FixMain {
     private static void loadAgent(VirtualMachine vm, String JavaAgentJarPath, String JavaAgentMainargs)
 	    throws AgentLoadException, AgentInitializationException, IOException {
 	System.out.println("=====begin attach=====");
-	vm.loadAgent(JavaAgentJarPath, JavaAgentMainargs);
-	vm.detach();
+	try {
+	    vm.loadAgent(JavaAgentJarPath, JavaAgentMainargs);
+	} finally {
+	    vm.detach();
+	}
 	System.out.println("=====end detach=====");
     }
 }
